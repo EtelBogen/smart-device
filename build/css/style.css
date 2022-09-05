@@ -631,26 +631,68 @@ button,
   padding: 0 40px;
 }
 
-.btn {
+.button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin: 10px 0;
-  padding: 10px 20px;
-  color: white;
-  background-color: #2c39f2;
-  border: none;
+  margin: 10px;
+  padding: 10px 15px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #f2f5f6;
+  border-radius: 3px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
-.btn--red {
-  background-color: #ff1553;
+.button:focus {
+  outline: 2px solid white;
+  border-radius: 2px;
 }
 
-.btn:disabled {
+.button--clear-white {
+  font-size: 14px;
+  line-height: 16px;
+  color: #f2f5f6;
+}
+
+.button--blue {
+  font-size: 18px;
+  line-height: 22px;
+  color: #f2f5f6;
+  background-color: #00b2ff;
+  border: none;
+  padding: 16px 26px;
+  letter-spacing: 0.06em;
+}
+
+.button--clear-blue {
+  font-size: 14px;
+  line-height: 16px;
+  color: #00b2ff;
+  border-color: #00b2ff;
+  padding: 15px 50px;
+  letter-spacing: 0.05em;
+  margin-left: 0;
+}
+
+.button--clear-blue:hover,
+.button--clear-blue:focus {
+  outline: 2px solid black;
+}
+
+.button:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
@@ -725,7 +767,7 @@ button,
   background-color: white;
 }
 
-.modal__close-btn {
+.modal__close-button {
   position: absolute;
   top: 22px;
   right: 22px;
@@ -775,8 +817,8 @@ button,
 } */
 
 @media (hover: hover), screen and (min-width: 0\0) {
-  .btn:hover,
-  .btn:focus {
+  .button:hover,
+  .button:focus {
     opacity: 0.8;
   }
 }
@@ -791,11 +833,27 @@ button,
   .container {
     padding: 0 24px;
   }
+
+  .button--clear-blue {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 14px 50px;
+  }
 }
 
 @media (max-width: 767px) {
   .container {
     padding: 0 16px;
+  }
+
+  .button--blue {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 12px 36px;
+  }
+
+  .button--clear-blue {
+    padding: 8px 40px;
   }
 
   .modal__wrapper {
