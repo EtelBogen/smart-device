@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Производство и монтаж печатных плат">
     <title>Smart Device</title>
-    <link rel="preload" href="fonts/ptmono-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/robotocondensed-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
@@ -18,7 +18,7 @@
   <body class="page__body">
     <div class="wrapper">
       <header class="page-header">
-        <div class="container">
+        <div class="container page-header__container">
           <a class="page-header__logo">
             <picture>
               <source media="(max-width: 767px)" srcset="img/svg/logo-without-text.svg">
@@ -26,7 +26,7 @@
               <img src="img/svg/logo-with-text.svg" width="215" height="55" alt="Логотип Smart Device">
             </picture>
           </a>
-          <ul class="header__contacts contacts-list list-reset">
+          <ul class="page-header__contacts contacts-list list-reset">
             <li class="contacts-list__item">
               <a href="mailto:info@sd.ru" aria-label="Написать нам.">
                 <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
@@ -51,13 +51,13 @@
 
       <main>
         <h1 class="visually-hidden">Компания Smart Device.</h1>
-        <section class="intro">
-          <div class="container intro__wrapper">
+        <section class="intro-main">
+          <div class="container intro-main__wrapper">
             <h2>Печатные платы</h2>
             <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-            <a class="button button--blue intro__button" href="#feedback" data-anchor>
-              <span class="intro__button-text-desktop">Получить бесплатную консультацию</span>
-              <span class="intro__button-text-mobile">Бесплатная консультация</span>
+            <a class="button button--blue intro-main__button" href="#feedback" data-anchor>
+              <span class="intro-main__button-text-desktop">Получить бесплатную консультацию</span>
+              <span class="intro-main__button-text-mobile">Бесплатная консультация</span>
             </a>
           </div>
         </section>
@@ -66,7 +66,7 @@
           <div class="container advantages__container">
             <h2 class="visually-hidden">Наши преимущества.</h2>
             <ul class="advantages__list list-reset">
-              <li class="advantages-card">
+              <li class="advantages-card" tabindex="0">
                 <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite_auto.svg#advantages-icon-stopwatch"></use>
                 </svg>
@@ -77,17 +77,7 @@
                 </p>
               </li>
 
-              <li class="advantages-card">
-                <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite_auto.svg#advantages-icon-detective"></use>
-                </svg>
-                <h3>Полная конфиденциальность</h3>
-                <p>
-                  По желанию клиента&ensp; мы обеспечиваем полную конфиденциальность.
-                </p>
-              </li>
-
-              <li class="advantages-card">
+              <li class="advantages-card" tabindex="0">
                 <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite_auto.svg#advantages-icon-hired"></use>
                 </svg>
@@ -98,7 +88,17 @@
                 </p>
               </li>
 
-              <li class="advantages-card">
+              <li class="advantages-card" tabindex="0">
+                <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite_auto.svg#advantages-icon-detective"></use>
+                </svg>
+                <h3>Полная конфиденциальность</h3>
+                <p>
+                  По желанию клиента&ensp; мы обеспечиваем полную конфиденциальность.
+                </p>
+              </li>
+
+              <li class="advantages-card" tabindex="0">
                 <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite_auto.svg#advantages-icon-tag"></use>
                 </svg>
@@ -118,7 +118,7 @@
             <picture>
               <source type="image/webp" srcset="img/png/about-company-year@1x.webp 1x, img/png/about-company-year@2x.webp 2x">
               <!-- 1x: 150px ; 2x: 300px -->
-              <img src="img/png/about-company-year@1x.png" srcset="img/png/about-company-year@2x.png 2x" width="150" height="320" alt="2022 год.">>
+              <img src="img/png/about-company-year@1x.png" srcset="img/png/about-company-year@2x.png 2x" width="150" height="320" alt="2022 год.">
             </picture>
             <div class="about-company__description-wrapper">
               <h2>О компании</h2>
@@ -129,23 +129,23 @@
               <p>
                 Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <span>Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span>
               </p>
-              <p>
-                <span>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых
+              <p class="about-company__additional-description">
+                Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых
                 продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20
-                городов присутствия.</span>
+                городов присутствия.
               </p>
-              <p>
-                <span>Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании.
-                Использование инновационных технологий помогает экономить деньги и время наших клиентов.</span>
+              <p class="about-company__additional-description">
+                Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании.
+                Использование инновационных технологий помогает экономить деньги и время наших клиентов.
               </p>
-              <button class="button button--clear-blue about__button" type="button">Подробнее</button>
+              <button class="button button--clear-blue about-company__button" type="button">Подробнее</button>
             </div>
           </div>
         </section>
 
         <section class="catalog" id="catalog">
           <div class="container catalog__container">
-            <h2><span>Товары и услуги</span> Smart Device <span>предлагает следующие товары и услуги</span></h2>
+            <h2><span>Товары и услуги</span> Smart Device <span>предлагает следующие товары и&nbsp;услуги</span></h2>
 
             <ul class="catalog__list list-reset">
               <li class="catalog-card catalog__item">
@@ -237,40 +237,40 @@
           </section>
 
           <nav class="footer__navigation">
-            <h2 class="footer__title footer__title--close">Разделы сайта</h2>
-            <button class="footer__toggle" type="button">
+            <h2>Разделы сайта</h2>
+            <button type="button">
               <span class="visually-hidden">Развернуть/свернуть список разделов сайта.</span>
             </button>
-            <ul class="nav-list footer__nav-list list-reset">
-              <li class="nav-list__item">
+            <ul class="footer__navigation-list navigation-list list-reset">
+              <li class="navigation-list__item">
                 <a href="#about" data-anchor>О Компании</a>
               </li>
-              <li class="nav-list__item">
+              <li class="navigation-list__item">
                 <a href="#catalog" data-anchor>Продукты</a>
               </li>
-              <li class="nav-list__item">
+              <li class="navigation-list__item">
                 <a href="#">Производство печатных плат</a>
               </li>
-              <li class="nav-list__item">
+              <li class="navigation-list__item">
                 <a href="#">Монтаж печатных плат</a>
               </li>
             </ul>
-            <ul class="nav-list footer__nav-list list-reset">
-              <li class="nav-list__item">
+            <ul class="footer__navigation-list navigation-list list-reset">
+              <li class="navigation-list__item">
                 <a href="#">Комплектующие</a>
               </li>
-              <li class="nav-list__item">
+              <li class="navigation-list__item">
                 <a href="#">Доставка</a>
               </li>
-              <li class="nav-list__item">
+              <li class="navigation-list__item">
                 <a href="#">Контакты</a>
               </li>
             </ul>
           </nav>
 
           <section class="footer__contacts">
-            <h2 class="footer__title footer__title--contacts">Наш офис</h2>
-            <button class="footer__toggle" type="button">
+            <h2>Наш офис</h2>
+            <button type="button">
               <span class="visually-hidden">Развернуть/свернуть контакты</span>
             </button>
             <address class="footer__address"><a href="https://yandex.ru/maps/-/CCURvLCJtD">г. Мытищи, Олимпийский проспект, д.10</a></address>
