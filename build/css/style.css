@@ -2166,7 +2166,9 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-left: 25px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-bottom: 16px;
   }
 
@@ -2176,7 +2178,6 @@ button,
 
   .page-footer__social-list {
     margin-top: 0;
-    margin-left: 42px;
     margin-bottom: 6px;
   }
 

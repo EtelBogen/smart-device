@@ -43,7 +43,7 @@
   @include vp-767 {
     display: flex;
     flex-direction: column;
-    margin-left: 25px;
+    align-items: center;
     margin-bottom: 16px;
   }
 }
@@ -73,7 +73,6 @@
 
   @include vp-767 {
     margin-top: 0;
-    margin-left: 42px;
     margin-bottom: 6px;
   }
 }
