@@ -1,0 +1,26 @@
+.navigation-list__item {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @include vp-1023 {
+    width: 210px;
+  }
+}
+
+.navigation-list__item a {
+  line-height: 22px;
+  color: $color-white-transparent;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 2px solid $color-default-white;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}

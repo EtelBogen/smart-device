@@ -1,0 +1,21 @@
+.social__item a {
+  display: block;
+  width: 30px;
+  height: 30px;
+
+  &:hover,
+  &:focus {
+    outline: 2px solid $color-default-white;
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+}
+
+.social__item svg {
+  fill: $color-alice-blue-background;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}

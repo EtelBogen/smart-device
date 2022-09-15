@@ -3,8 +3,11 @@
   font-size: 16px;
   line-height: 18px;
 
-  &:hover {
-    color: $color-deep-sky-blue;
+  &:hover,
+  &:focus {
+    outline: 2px solid $color-default-white;
+    outline-offset: 2px;
+    border-radius: 2px;
   }
 }
 
