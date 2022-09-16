@@ -687,6 +687,30 @@ button,
   margin-top: 18px;
 }
 
+.accordion button::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: 27px;
+  top: 20px;
+  padding: 0;
+  background: url("../img/svg/icon-minus.svg") no-repeat, rgba(255, 255, 255, 0);
+}
+
+.accordion button:hover,
+.accordion button:active {
+  opacity: 0.7;
+}
+
+.accordion--closed button::after {
+  background: url("../img/svg/icon-plus.svg") no-repeat;
+}
+
+.accordion--closed div {
+  display: none;
+}
+
 .advantages {
   padding: 120px 0 60px;
 }
@@ -2183,29 +2207,17 @@ button,
 
   .page-footer__navigation button,
   .page-footer__contacts button {
+    display: block;
     position: absolute;
     right: -25px;
     top: 0;
     min-height: 60px;
-    width: 100%;
-    display: block;
+    width: 100vw;
     border: none;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0);
     margin: 0;
     padding: 0;
-  }
-
-  .page-footer__navigation button::after,
-  .page-footer__contacts button::after {
-    content: "";
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    right: 27px;
-    top: 20px;
-    padding: 0;
-    background: url("../img/svg/icon-minus.svg") no-repeat, rgba(255, 255, 255, 0);
   }
 
   .page-footer__navigation {
@@ -2231,14 +2243,6 @@ button,
     bottom: 0;
   }
 
-  .page-footer__navigation--close button::after {
-    background: url("../img/svg/icon-plus.svg") no-repeat;
-  }
-
-  .page-footer__navigation--close .page-footer__navigation-list {
-    display: none;
-  }
-
   .page-footer__navigation h2,
   .page-footer__contacts h2 {
     position: relative;
@@ -2246,11 +2250,6 @@ button,
     padding-top: 24px;
     padding-bottom: 21px;
     padding-right: 30px;
-  }
-
-  .page-footer__contacts h2 {
-    padding-top: 23px;
-    padding-bottom: 11px;
   }
 
   .page-footer__navigation-list:last-child li:last-child {
@@ -2269,15 +2268,6 @@ button,
     width: 100vw;
     height: 1px;
     background-color: rgba(248, 253, 255, 0.7);
-  }
-
-  .page-footer__contacts--close button::after {
-    background: url("../img/svg/icon-plus.svg") no-repeat;
-  }
-
-  .page-footer__contacts--close .page-footer__address,
-  .page-footer__contacts--close .page-footer__phones-list {
-    display: none;
   }
 
   .page-footer__address a,

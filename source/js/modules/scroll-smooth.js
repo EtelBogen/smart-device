@@ -1,4 +1,4 @@
-const anchors = document.querySelectorAll('a[href*="#"]'); // получение якорных ссылок
+const anchors = document.querySelectorAll('a[data-anchor]'); // получение якорных ссылок
 
 const addScrollSmooth = () => {
   // выполнение функции для каждой ссылки

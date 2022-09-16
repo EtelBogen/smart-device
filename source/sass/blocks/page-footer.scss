@@ -86,28 +86,17 @@
   display: none;
 
   @include vp-767 {
+    display: block;
     position: absolute;
     right: -25px;
     top: 0;
     min-height: 60px;
-    width: 100%;
-    display: block;
+    width: 100vw;
     border: none;
     cursor: pointer;
     background-color: $color-transparent;
     margin: 0;
     padding: 0;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 15px;
-      height: 15px;
-      right: 27px;
-      top: 20px;
-      padding: 0;
-      background: url("../img/svg/icon-minus.svg") no-repeat, $color-transparent;
-    }
   }
 }
 
@@ -144,14 +133,6 @@
       left: -25px;
       bottom: 0;
     }
-
-    &--close button::after {
-      background: url("../img/svg/icon-plus.svg") no-repeat;
-    }
-
-    &--close .page-footer__navigation-list {
-      display: none;
-    }
   }
 }
 
@@ -182,11 +163,6 @@
 
 .page-footer__contacts h2 {
   margin-top: 8px;
-
-  @include vp-767 {
-    padding-top: 23px;
-    padding-bottom: 11px;
-  }
 }
 
 .page-footer__navigation-list li {
@@ -227,15 +203,6 @@
       width: 100vw;
       height: 1px;
       background-color: $color-alice-blue-opacity;
-    }
-
-    &--close button::after {
-      background: url("../img/svg/icon-plus.svg") no-repeat;
-    }
-
-    &--close .page-footer__address,
-    &--close .page-footer__phones-list {
-      display: none;
     }
   }
 }
