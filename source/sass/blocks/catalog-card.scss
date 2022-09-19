@@ -1,6 +1,6 @@
 .catalog-card {
   position: relative;
-  background: $color-black-pearl url("../img/jpg/bg-intro-desktop@1x.jpg") no-repeat bottom;
+  background: $color-venice-blue url("../img/jpg/bg-intro-desktop@1x.jpg") no-repeat bottom;
 
   &:hover,
   &:focus-within {
@@ -36,7 +36,7 @@
 
   &:nth-child(3n+1) {
     background-position: bottom 31% left -189px;
-    background-color: red;
+
     @include vp-1023 {
       background-position: bottom 3% left -243px;
     }

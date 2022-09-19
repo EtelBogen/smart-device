@@ -1,23 +1,23 @@
-const additionalDescription = document.querySelectorAll('.about-company__additional-description');
-const buttonAbout = document.querySelector('.about-company__button');
+const additionalDescription = document.querySelectorAll('.additional-description');
+const buttonAbout = document.querySelector('.additional-description__button');
 
 const initAdditionalDescription = () => {
   const openAdditionalDescription = () => {
     additionalDescription.forEach((el) => {
-      el.classList.add('about-company__additional-description--opened');
+      el.classList.add('additional-description--opened');
       buttonAbout.innerHTML = 'Свернуть';
     });
   };
 
   const closeAdditionalDescription = () => {
     additionalDescription.forEach((el) => {
-      el.classList.remove('about-company__additional-description--opened');
+      el.classList.remove('additional-description--opened');
       buttonAbout.innerHTML = 'Подробнее';
     });
   };
 
   buttonAbout.addEventListener('click', () => {
-    if (additionalDescription[0].classList.contains('about-company__additional-description--opened')) {
+    if (additionalDescription[0].classList.contains('additional-description--opened')) {
       closeAdditionalDescription();
     } else {
       openAdditionalDescription();

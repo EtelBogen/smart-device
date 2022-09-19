@@ -710,6 +710,14 @@ button,
   display: none;
 }
 
+.additional-description {
+  display: none;
+}
+
+.additional-description--opened {
+  display: block;
+}
+
 .advantages {
   padding: 120px 0 60px;
 }
@@ -890,7 +898,7 @@ button,
 
 .catalog-card {
   position: relative;
-  background: #041827 url("../img/jpg/bg-intro-desktop@1x.jpg") no-repeat bottom;
+  background: #2a5277 url("../img/jpg/bg-intro-desktop@1x.jpg") no-repeat bottom;
 }
 
 .catalog-card:hover,
@@ -923,7 +931,6 @@ button,
 
 .catalog-card:nth-child(3n+1) {
   background-position: bottom 31% left -189px;
-  background-color: red;
 }
 
 .catalog-card:nth-child(3n+2) {
@@ -1190,16 +1197,6 @@ button,
   background-color: rgba(25, 32, 36, 0.7);
   background-size: cover;
   overflow: auto;
-}
-
-.intro-main::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  min-height: 880px;
-  background-color: rgba(4, 24, 39, 0.5);
 }
 
 .intro-main__wrapper {
@@ -1574,9 +1571,11 @@ button,
   -moz-column-gap: 30px;
   column-gap: 30px;
   row-gap: 15px;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  margin: 42px auto 20px;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[1];
+  grid-template-rows: repeat(1, 1fr);
+  margin: 42px auto;
 }
 
 .page-header__button {
@@ -1590,6 +1589,10 @@ button,
   background-color: #f8fdff;
   min-width: 320px;
   width: 100%;
+}
+
+.social__item {
+  margin-bottom: 25px;
 }
 
 .social__item a {
@@ -1817,10 +1820,6 @@ button,
     background-position: bottom left 20%;
   }
 
-  .intro-main::before {
-    min-height: 640px;
-  }
-
   .intro-main__wrapper {
     margin-top: 180px;
   }
@@ -1870,6 +1869,7 @@ button,
 
   .page-footer__social-list {
     margin-top: 4px;
+    max-width: 440px;
   }
 
   .page-footer__navigation {
@@ -2132,10 +2132,6 @@ button,
     background-position: bottom left 25%;
   }
 
-  .intro-main::before {
-    min-height: 560px;
-  }
-
   .intro-main__wrapper {
     margin-top: 150px;
   }
@@ -2213,6 +2209,7 @@ button,
     margin-top: 0;
     margin-bottom: 6px;
     margin-left: 4px;
+    max-width: none;
   }
 
   .page-footer__navigation button,

@@ -18,24 +18,6 @@
     min-height: 560px;
     background-position: bottom left 25%;
   }
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    min-height: 880px;
-    background-color: $color-black-pearl-poligon;
-
-    @include vp-1023 {
-      min-height: 640px;
-    }
-
-    @include vp-767 {
-      min-height: 560px;
-    }
-  }
 }
 
 .intro-main__wrapper {

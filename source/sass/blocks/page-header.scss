@@ -49,8 +49,9 @@
   min-width: 470px;
   column-gap: 30px;
   row-gap: 15px;
-  grid-template-columns: 1fr 1fr;
-  margin: 42px auto 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  margin: 42px auto;
 
   @include vp-1023 {
     display: flex;
