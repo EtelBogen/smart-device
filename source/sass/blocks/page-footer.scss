@@ -50,6 +50,7 @@
 
 .page-footer__logo {
   display: inline-flex;
+  vertical-align: middle;
   margin-bottom: 30px;
 
   @include vp-1023 {

@@ -51,4 +51,4 @@ const initFooterAccordion = () => {
   });
 };
 
-export {initFooterAccordion};
+export {initFooterAccordion, mobileScreen};

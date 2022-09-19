@@ -3,6 +3,7 @@
   padding: 7px 15px 13px;
 
   align-items: center;
+  vertical-align: middle;
 
   font-family: $ff-roboto-condensed;
   letter-spacing: 0.07em;
@@ -68,7 +69,6 @@
   }
 
   &--black {
-    display: inline-flex;
     line-height: 16px;
     letter-spacing: 0.05em;
     color: $color-default-white;

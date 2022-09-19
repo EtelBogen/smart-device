@@ -34,9 +34,9 @@
     }
   }
 
-  &:nth-child(1n) {
+  &:nth-child(3n+1) {
     background-position: bottom 31% left -189px;
-
+    background-color: red;
     @include vp-1023 {
       background-position: bottom 3% left -243px;
     }
@@ -46,7 +46,7 @@
     }
   }
 
-  &:nth-child(2n) {
+  &:nth-child(3n+2) {
     background-position: bottom 28% left -533px;
 
     @include vp-1023 {
@@ -93,9 +93,10 @@
 .catalog-card a {
   position: relative;
   display: inline-flex;
+  vertical-align: middle;
   width: 100%;
   height: 650px;
-  padding: 47px 10px 80px 40px;
+  padding: 47px 40px 80px;
   overflow-y: auto;
   z-index: 1;
 

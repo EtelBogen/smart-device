@@ -4,6 +4,7 @@ import {checkPhoneSpelling} from './modules/phone';
 import {addScrollSmooth} from './modules/scroll-smooth';
 import {initAdditionalDescription} from './modules/additional-description';
 import {initFooterAccordion} from './modules/accordion';
+import {addNewCatalogHeader} from './modules/get-data-attribute';
 
 // ---------------------------------
 
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initFooterAccordion();
+    addNewCatalogHeader();
   });
 });
 

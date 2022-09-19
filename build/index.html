@@ -55,9 +55,8 @@
           <div class="container intro-main__wrapper">
             <h2>Печатные платы</h2>
             <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-            <a class="button button--blue intro-main__button" href="#feedback" data-anchor>
-              <span class="intro-main__button-text-desktop">Получить бесплатную консультацию</span>
-              <span class="intro-main__button-text-mobile">Бесплатная консультация</span>
+            <a class="button button--blue intro-main__button" href="#feedback" data-anchor data-header="Бесплатная консультация">
+              Получить бесплатную консультацию
             </a>
           </div>
         </section>
@@ -144,8 +143,8 @@
         </section>
 
         <section class="catalog" id="catalog">
-          <div class="container catalog__container">
-            <h2><span>Товары и услуги</span> Smart Device <span>предлагает следующие товары и&nbsp;услуги</span></h2>
+          <div class="container">
+            <h2 data-header="Товары и услуги Smart Device">Smart Device предлагает следующие товары и&nbsp;услуги</h2>
 
             <ul class="catalog__list list-reset">
               <li class="catalog-card catalog__item">
@@ -300,32 +299,30 @@
 
     <!-- Модалки -->
     <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <h2>Закажите звонок</h2>
-          <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-          <button class="modal__close-button button-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="20" height="20">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <h2>Закажите звонок</h2>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <button class="modal__close-button button-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="20" height="20">
+            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="form modal__form" action="https://echo.htmlacademy.ru/" method="get">
+          <label class="visually-hidden" for="name-pop-up">Введите Ваше имя</label>
+          <input type="text" id="name-pop-up" name="client-name" placeholder="Имя" required>
+          <label class="visually-hidden" for="client-phone-pop-up">Введите Ваше имя</label>
+          <input type="tel" id="client-phone-pop-up" name="client-phone-pop-up" maxlength="14" pattern=".{14}" title="Номер телефона должен состоять из 11 цифр" placeholder="Телефон" data-tel-input required>
+          <label class="visually-hidden" for="question-pop-up">Введите Ваш вопрос</label>
+          <textarea name="question" id="question-pop-up" rows="6" placeholder="Ваш вопрос"></textarea>
+          <div class="form__agreement">
+            <input class="visually-hidden" type="checkbox" id="agreement-pop-up" name="client-agreement" required checked>
+            <label for="agreement-pop-up">Я согласен на обработку&emsp;&thinsp;персональных данных</label>
+          </div>
+          <button class="button button--black" type="submit" value="Отправить">
+            Отправить
           </button>
-          <form class="form modal__form" action="https://echo.htmlacademy.ru/" method="get">
-            <label class="visually-hidden" for="name-pop-up">Введите Ваше имя</label>
-            <input type="text" id="name-pop-up" name="client-name" placeholder="Имя" required>
-            <label class="visually-hidden" for="client-phone-pop-up">Введите Ваше имя</label>
-            <input type="tel" id="client-phone-pop-up" name="client-phone-pop-up" maxlength="14" pattern=".{14}" title="Номер телефона должен состоять из 11 цифр" placeholder="Телефон" data-tel-input required>
-            <label class="visually-hidden" for="question-pop-up">Введите Ваш вопрос</label>
-            <textarea name="question" id="question-pop-up" rows="6" placeholder="Ваш вопрос"></textarea>
-            <div class="form__agreement">
-              <input class="visually-hidden" type="checkbox" id="agreement-pop-up" name="client-agreement" required checked>
-              <label for="agreement-pop-up">Я согласен на обработку&emsp;&thinsp;персональных данных</label>
-            </div>
-            <button class="button button--black" type="submit" value="Отправить">
-              Отправить
-            </button>
-          </form>
-        </div>
+        </form>
       </div>
     </div>
 

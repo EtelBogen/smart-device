@@ -107,19 +107,6 @@
   @include vp-767 {
     margin-left: 0;
     margin-bottom: 10px;
-  }
-}
-
-.intro-main__button-text-desktop {
-  @include vp-767 {
-    display: none;
-  }
-}
-
-.intro-main__button-text-mobile {
-  display: none;
-
-  @include vp-767 {
-    display: inline;
+    text-align: center;
   }
 }
