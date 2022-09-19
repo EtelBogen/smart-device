@@ -49,6 +49,6 @@ const initFooterAccordion = () => {
       turnOffAccordion();
     }
   });
-}
+};
 
 export {initFooterAccordion};

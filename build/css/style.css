@@ -773,16 +773,20 @@ button,
   font-size: 24px;
   line-height: 33.6px;
   color: #00b3ff;
-  margin: 0 0 14px;
+  margin: 15px 0 14px;
   z-index: 1;
+}
+
+.advantages-card p {
+  margin: 0;
+  line-height: 21.6px;
 }
 
 .button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin: 10px;
-  padding: 10px 15px;
+  padding: 7px 15px 13px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -830,7 +834,6 @@ button,
   border-color: #00b3ff;
   padding: 15px 50px;
   letter-spacing: 0.05em;
-  margin-left: 0;
 }
 
 .button--clear-blue:hover,
@@ -851,7 +854,6 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 0;
 }
 
 .button:disabled {
@@ -1208,7 +1210,7 @@ button,
 }
 
 .intro-main h2 {
-  margin: 0 auto 36px;
+  margin: 0 auto 31px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 80px;
   line-height: 94px;
@@ -1421,7 +1423,7 @@ button,
 }
 
 .navigation-list__item a {
-  line-height: 22px;
+  line-height: 21.6px;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -1501,22 +1503,35 @@ button,
   font-weight: 400;
   color: white;
   text-transform: uppercase;
-  margin: 7px 0 17px;
+  margin: 7px 0 15px;
   letter-spacing: 0.05em;
 }
 
 .page-footer__contacts h2 {
   margin-top: 8px;
+  margin-bottom: 19px;
 }
 
 .page-footer__navigation-list li {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .page-footer__contacts {
   -ms-grid-column: 8;
   -ms-grid-column-span: 3;
   grid-column: 8 / 11;
+}
+
+.page-footer__address:hover {
+  opacity: 0.8;
+}
+
+.page-footer__phones-list li {
+  margin-bottom: 7px;
+}
+
+.page-footer__phones-list li:hover {
+  opacity: 0.8;
 }
 
 .page-footer__address a,
@@ -1535,20 +1550,12 @@ button,
   border-radius: 2px;
 }
 
-.page-footer__address {
-  margin-bottom: 8px;
+.page-footer__address a {
+  line-height: 21.6px;
 }
 
-.page-footer__address:hover {
-  opacity: 0.8;
-}
-
-.page-footer__phones-list li {
-  margin-bottom: 7px;
-}
-
-.page-footer__phones-list li:hover {
-  opacity: 0.8;
+.page-footer__phones-list a {
+  line-height: 25px;
 }
 
 .page-header {
@@ -1596,7 +1603,7 @@ button,
 
 .page-header__button {
   min-width: 160px;
-  margin: 35px 59px auto 10px;
+  margin: 37px 61px auto 10px;
 }
 
 .page__body {
@@ -1649,7 +1656,7 @@ button,
 
   .about-company {
     padding-top: 16px;
-    padding-bottom: 70px;
+    padding-bottom: 81px;
   }
 
   .about-company img {
@@ -1674,8 +1681,28 @@ button,
     padding-right: 30px;
   }
 
+  .advantages-card svg {
+    width: 30px;
+    height: 30px;
+  }
+
   .advantages-card h3 {
+    margin-top: 9px;
     margin-bottom: 8px;
+  }
+
+  .advantages-card--detective h3 {
+    margin-bottom: 7px;
+  }
+
+  .advantages-card--tag h3 {
+    margin-top: 3px;
+    margin-bottom: 7px;
+  }
+
+  .advantages-card p {
+    font-size: 14px;
+    line-height: 19px;
   }
 
   .button--clear-blue {
@@ -1750,7 +1777,7 @@ button,
 
   .feedback {
     padding-top: 45px;
-    padding-bottom: 126px;
+    padding-bottom: 124px;
   }
 
   .feedback::before {
@@ -1903,6 +1930,10 @@ button,
     margin-bottom: 3px;
   }
 
+  .page-footer__phones-list li {
+    margin-bottom: 5px;
+  }
+
   .page-header {
     position: absolute;
     min-height: 100px;
@@ -1941,7 +1972,7 @@ button,
 
   .about-company {
     padding-top: 10px;
-    padding-bottom: 69px;
+    padding-bottom: 80px;
   }
 
   .about-company h2 {
@@ -1992,9 +2023,19 @@ button,
     margin-bottom: 30px;
   }
 
+  .advantages-card:nth-child(n+3) {
+    min-height: 325px;
+  }
+
   .advantages-card h3 {
     font-size: 20px;
     line-height: 28px;
+  }
+
+  .advantages-card--detective h3,
+  .advantages-card--tag h3 {
+    margin-top: 13px;
+    margin-bottom: 12px;
   }
 
   .button--blue {
@@ -2128,7 +2169,7 @@ button,
   }
 
   .intro-main p {
-    margin-bottom: 46px;
+    margin-bottom: 44px;
     font-size: 14px;
     line-height: 21.7px;
   }
@@ -2193,16 +2234,18 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 
   .page-footer__logo {
     margin-bottom: 16px;
+    margin-left: -5px;
   }
 
   .page-footer__social-list {
     margin-top: 0;
     margin-bottom: 6px;
+    margin-left: 4px;
   }
 
   .page-footer__navigation button,
@@ -2247,7 +2290,7 @@ button,
   .page-footer__contacts h2 {
     position: relative;
     margin: 0;
-    padding-top: 24px;
+    padding-top: 22px;
     padding-bottom: 21px;
     padding-right: 30px;
   }
@@ -2270,18 +2313,22 @@ button,
     background-color: rgba(248, 253, 255, 0.7);
   }
 
-  .page-footer__address a,
-  .page-footer__phones-list a {
-    font-size: 14px;
-    line-height: 19px;
-  }
-
   .page-footer__address {
     margin-bottom: 11px;
+    margin-top: -5px;
   }
 
   .page-footer__phones-list li:last-child {
-    margin-bottom: 15px;
+    margin-bottom: 13px;
+  }
+
+  .page-footer__address a,
+  .page-footer__phones-list a {
+    font-size: 14px;
+  }
+
+  .page-footer__address a {
+    line-height: 14px;
   }
 
   .page-header {

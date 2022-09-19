@@ -1,7 +1,7 @@
 .button {
   display: inline-flex;
-  margin: 10px;
-  padding: 10px 15px;
+  padding: 7px 15px 13px;
+
   align-items: center;
 
   font-family: $ff-roboto-condensed;
@@ -50,7 +50,6 @@
     border-color: $color-deep-sky-blue;
     padding: 15px 50px;
     letter-spacing: 0.05em;
-    margin-left: 0;
 
     &:hover,
     &:focus {
@@ -77,7 +76,6 @@
     padding: 15px 25px;
     border: none;
     justify-content: center;
-    margin: 0;
 
 
     @include vp-1023 {

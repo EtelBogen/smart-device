@@ -88,7 +88,7 @@
                 </p>
               </li>
 
-              <li class="advantages-card" tabindex="0">
+              <li class="advantages-card advantages-card--detective" tabindex="0">
                 <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite_auto.svg#advantages-icon-detective"></use>
                 </svg>
@@ -98,7 +98,7 @@
                 </p>
               </li>
 
-              <li class="advantages-card" tabindex="0">
+              <li class="advantages-card advantages-card--tag" tabindex="0">
                 <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite_auto.svg#advantages-icon-tag"></use>
                 </svg>
@@ -182,8 +182,8 @@
             </p>
 
             <form class="form feedback__form" action="https://echo.htmlacademy.ru/" method="get">
-              <label class="visually-hidden" for="name">Введите Ваше имя</label>
-              <input type="text" id="name" name="client-name" placeholder="Имя" required>
+              <label class="visually-hidden" for="client-name">Введите Ваше имя</label>
+              <input type="text" id="client-name" name="client-name" placeholder="Имя" required>
               <label class="visually-hidden" for="client-phone">Введите Ваше имя</label>
               <input type="tel" id="client-phone" name="client-phone" data-tel-input maxlength="14" pattern="[\+]{1}[7]{1}[\(]{1}[0-9]{3}[\)]{1}[0-9]{7}" title="Номер телефона должен состоять из 11 цифр" placeholder="Телефон" required>
               <label class="visually-hidden" for="question">Введите Ваш вопрос</label>
@@ -202,7 +202,7 @@
         <div class="container page-footer__container">
           <section class="page-footer__wrapper-logo-social">
             <h2 class="visually-hidden">Мы в соцсетях.</h2>
-            <a class="page-footer__logo">
+            <a class="page-footer__logo" aria-label="Логотип компании Smart Device.">
               <svg  width="215" height="55" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite_auto.svg#logo-with-text"></use>
               </svg>
