@@ -1,17 +1,20 @@
 import { mobileScreen } from './accordion';
 
-const catalogHeaders = document.querySelectorAll('[data-header]');
+const catalogMobileHeaders = document.querySelectorAll('[data-header]');
 
 const addNewCatalogHeader = () => {
-  catalogHeaders.forEach ((header) => {
-    const valueCatalogHeader = header.getAttribute('data-header');
+  catalogMobileHeaders.forEach ((header) => {
+    const valueCatalogHeader = header.textContent
+    const valueCatalogMobileHeader = header.getAttribute('data-header');
 
     if (mobileScreen.matches) {
-      header.textContent = valueCatalogHeader;
+      header.textContent = valueCatalogMobileHeader;
     }
 
     mobileScreen.addEventListener('change', () => {
       if (mobileScreen.matches) {
+        header.textContent = valueCatalogMobileHeader;
+      } else {
         header.textContent = valueCatalogHeader;
       }
     });
