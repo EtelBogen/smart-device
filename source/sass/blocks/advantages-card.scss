@@ -35,8 +35,7 @@
     z-index: 0;
   }
 
-  &:hover,
-  &:focus-within {
+  &:hover {
     background-color: $color-deep-sky-blue;
 
     & svg {

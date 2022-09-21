@@ -1,22 +1,31 @@
 .intro-main {
   min-height: 880px;
-  background: url("../img/jpg/bg-intro-desktop@1x.jpg") no-repeat bottom;
-  background-color: $color-black-pearl-lite;
+  background: $color-black-pearl-lite url("../img/jpg/bg-intro-desktop@1x.jpg") no-repeat bottom;;
   background-size: cover;
   overflow: auto;
 
-  @include retina {
-    background-image: url("../img/jpg/bg-intro-desktop@2x.jpg");
+  @include vp-1024 {
+    @include retina {
+      background-image: url("../img/jpg/bg-intro-desktop@2x.jpg");
+    }
   }
 
   @include vp-1023 {
     min-height: 640px;
-    background-position: bottom left 20%;
+    background-image: url("../img/jpg/bg-intro-tablet@1x.jpg");
+
+    @include retina {
+      background-image: url("../img/jpg/bg-intro-tablet@2x.jpg");
+    }
   }
 
   @include vp-767 {
     min-height: 560px;
-    background-position: bottom left 25%;
+    background-image: url("../img/jpg/bg-intro-mobile@1x.jpg");
+
+    @include retina {
+      background-image: url("../img/jpg/bg-intro-mobile@2x.jpg");
+    }
   }
 }
 
@@ -80,6 +89,7 @@
 
 .intro-main__button {
   margin: 0;
+  font-weight: 700;
 
   @include vp-1023 {
     margin-bottom: 57px;

@@ -1,20 +1,11 @@
 .catalog-card {
   position: relative;
-  background: $color-venice-blue url("../img/jpg/bg-intro-desktop@1x.jpg") no-repeat bottom;
+  background-color: $color-venice-blue;
+  background-size: cover;
 
   &:hover,
   &:focus-within {
     box-shadow: 0 0 10px $color-default-white;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $color-black-pearl-poligon;
   }
 
   &::after {
@@ -35,38 +26,80 @@
   }
 
   &:nth-child(3n+1) {
-    background-position: bottom 31% left -189px;
+    background-image: url("../img/jpg/bg-catalog-desktop-01@1x.jpg");
+
+    @include vp-1024 {
+      @include retina {
+        background-image: url("../img/jpg/bg-catalog-desktop-01@2x.jpg");
+      }
+    }
 
     @include vp-1023 {
-      background-position: bottom 3% left -243px;
+      background-image: url("../img/jpg/bg-catalog-tablet-01@1x.jpg");
+
+      @include retina {
+        background-image: url("../img/jpg/bg-catalog-tablet-01@2x.jpg");
+      }
     }
 
     @include vp-767 {
-      background-position: bottom 47% left -375px;
+      background-image: url("../img/jpg/bg-catalog-mobile-01@1x.jpg");
+
+      @include retina {
+        background-image: url("../img/jpg/bg-catalog-mobile-01@2x.jpg");
+      }
     }
   }
 
   &:nth-child(3n+2) {
-    background-position: bottom 28% left -533px;
+    background-image: url("../img/jpg/bg-catalog-desktop-02@1x.jpg");
+
+    @include vp-1024 {
+      @include retina {
+        background-image: url("../img/jpg/bg-catalog-desktop-02@2x.jpg");
+      }
+    }
 
     @include vp-1023 {
-      background-position: bottom 45% right -196px;
+      background-image: url("../img/jpg/bg-catalog-tablet-02@1x.jpg");
+
+      @include retina {
+        background-image: url("../img/jpg/bg-catalog-tablet-02@2x.jpg");
+      }
     }
 
     @include vp-767 {
-      background-position: bottom 5% left -365px;
+      background-image: url("../img/jpg/bg-catalog-mobile-02@1x.jpg");
+
+      @include retina {
+        background-image: url("../img/jpg/bg-catalog-mobile-02@2x.jpg");
+      }
     }
   }
 
   &:nth-child(3n) {
-    background-position: bottom 34% right -250px;
+    background-image: url("../img/jpg/bg-catalog-desktop-03@1x.jpg");
+
+    @include vp-1024 {
+      @include retina {
+        background-image: url("../img/jpg/bg-catalog-desktop-03@2x.jpg");
+      }
+    }
 
     @include vp-1023 {
-      background-position: bottom 37% left -148px;
+      background-image: url("../img/jpg/bg-catalog-tablet-03@1x.jpg");
+
+      @include retina {
+        background-image: url("../img/jpg/bg-catalog-tablet-03@2x.jpg");
+      }
     }
 
     @include vp-767 {
-      background-position: bottom 31% right -340px;
+      background-image: url("../img/jpg/bg-catalog-mobile-03@1x.jpg");
+
+      @include retina {
+        background-image: url("../img/jpg/bg-catalog-mobile-03@2x.jpg");
+      }
     }
   }
 }
